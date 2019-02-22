@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="osbond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vtc-yf-gJx">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xky-xO-tTm">
+                                <rect key="frame" x="40" y="626" width="334" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32m-9U-UqM" customClass="BtnLogin" customModule="osbond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Cra-Bb-jUk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="FACEBOOK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnUIFB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeO-Bq-vKj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-67-MgJ" customClass="BtnLogin" customModule="osbond">
+                                        <rect key="frame" x="167" y="0.0" width="167" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="l4W-Pk-nyH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="GOOGLE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnUIGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0F-s1-OVz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET'S JOIN WITH US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Up-4V-2Fn">
+                                <rect key="frame" x="0.0" y="594.33333333333337" width="414" height="21.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_osbond.png" translatesAutoresizingMaskIntoConstraints="NO" id="sxt-Be-CbR">
+                                <rect key="frame" x="87" y="384.33333333333331" width="240" height="189.99999999999994"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="OHo-Nj-ujt"/>
+                                    <constraint firstAttribute="width" constant="240" id="cX4-bb-3Sd"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-86-CKM" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="95" y="246" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76J-tk-DPF" customClass="GIDSignInButton">
+                                <rect key="frame" x="247" y="207" width="1" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onLoginGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orZ-5q-ofv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vtc-yf-gJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DI0-9b-u4M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vtc-yf-gJx" secondAttribute="bottom" id="HrI-gb-laO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xky-xO-tTm" secondAttribute="bottom" constant="60" id="Jid-A6-U2x"/>
+                            <constraint firstItem="Xky-xO-tTm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="JmY-Lt-3RQ"/>
+                            <constraint firstItem="Xky-xO-tTm" firstAttribute="top" secondItem="3Up-4V-2Fn" secondAttribute="bottom" constant="10" id="bX7-5E-vC4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xky-xO-tTm" secondAttribute="trailing" constant="40" id="cR4-oo-MnD"/>
+                            <constraint firstItem="sxt-Be-CbR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="kJc-be-lph"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vtc-yf-gJx" secondAttribute="trailing" id="lwv-An-JGJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sxt-Be-CbR" secondAttribute="trailing" constant="87" id="nle-dx-4bl"/>
+                            <constraint firstItem="vtc-yf-gJx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="og2-Z5-GEf"/>
+                            <constraint firstItem="3Up-4V-2Fn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qS6-Yp-7lW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Up-4V-2Fn" secondAttribute="trailing" id="sBe-IO-bdz"/>
+                            <constraint firstItem="3Up-4V-2Fn" firstAttribute="top" secondItem="sxt-Be-CbR" secondAttribute="bottom" constant="20" id="voM-9U-Tro"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLoginFb" destination="oQc-86-CKM" id="Ypk-TZ-75A"/>
+                        <outlet property="btnLoginGoogle" destination="76J-tk-DPF" id="bX4-ra-E7w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="41.576086956521742"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_login.jpg" width="1240" height="2898"/>
+        <image name="logo_osbond.png" width="3175" height="2916"/>
+    </resources>
+</document>

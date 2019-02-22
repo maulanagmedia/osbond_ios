@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181E9B218693FF548EFBE554 /* Pods_osbondUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0706F87D6E39A807901F8BD6 /* Pods_osbondUITests.framework */; };
+		51D118918BC9D10AA52822FE /* Pods_osbond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F7700910541428CA177C57 /* Pods_osbond.framework */; };
+		CD18A932221B9EDE005D6CB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD18A931221B9EDE005D6CB6 /* GoogleService-Info.plist */; };
+		CD90DE59221A8EE700918F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE58221A8EE700918F3B /* AppDelegate.swift */; };
+		CD90DE5B221A8EE700918F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE5A221A8EE700918F3B /* ViewController.swift */; };
+		CD90DE5E221A8EE700918F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE5C221A8EE700918F3B /* Main.storyboard */; };
+		CD90DE60221A8EEA00918F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE5F221A8EEA00918F3B /* Assets.xcassets */; };
+		CD90DE63221A8EEA00918F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE61221A8EEA00918F3B /* LaunchScreen.storyboard */; };
+		CD90DE6E221A8EEA00918F3B /* osbondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE6D221A8EEA00918F3B /* osbondTests.swift */; };
+		CD90DE79221A8EEA00918F3B /* osbondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE78221A8EEA00918F3B /* osbondUITests.swift */; };
+		CD90DE87221A8F9C00918F3B /* icon_user.png in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE86221A8F9C00918F3B /* icon_user.png */; };
+		CD90DE89221A937200918F3B /* icon_launcher in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE88221A937200918F3B /* icon_launcher */; };
+		CD90DE8E221A990700918F3B /* bg_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE8D221A990700918F3B /* bg_login.jpg */; };
+		CD90DE92221AC25C00918F3B /* BtnLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE91221AC25C00918F3B /* BtnLogin.swift */; };
+		CD90DE94221AD00D00918F3B /* logo_osbond.png in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE93221AD00C00918F3B /* logo_osbond.png */; };
+		CDA56253221FA731008896D8 /* CustomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA56252221FA731008896D8 /* CustomToast.swift */; };
+		CDB0E85B221E55D800BF04F3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0E85A221E55D800BF04F3 /* SessionManager.swift */; };
+		CDB0E85D221E846000BF04F3 /* ServerURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0E85C221E846000BF04F3 /* ServerURL.swift */; };
+		D4DF3B1F315CC6142D4C7FBD /* Pods_osbondTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC2E1A449D1E22C83EED155 /* Pods_osbondTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD90DE6A221A8EEA00918F3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD90DE4D221A8EE700918F3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD90DE54221A8EE700918F3B;
+			remoteInfo = osbond;
+		};
+		CD90DE75221A8EEA00918F3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD90DE4D221A8EE700918F3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD90DE54221A8EE700918F3B;
+			remoteInfo = osbond;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0706F87D6E39A807901F8BD6 /* Pods_osbondUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbondUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		297140B109A56C68171240DA /* Pods-osbond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbond.release.xcconfig"; path = "Target Support Files/Pods-osbond/Pods-osbond.release.xcconfig"; sourceTree = "<group>"; };
+		43F7700910541428CA177C57 /* Pods_osbond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E359DD7932375D5478CA621 /* Pods-osbondTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondTests.debug.xcconfig"; path = "Target Support Files/Pods-osbondTests/Pods-osbondTests.debug.xcconfig"; sourceTree = "<group>"; };
+		715CF5A5CB9C4CE909E18B9E /* Pods-osbondUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondUITests.debug.xcconfig"; path = "Target Support Files/Pods-osbondUITests/Pods-osbondUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1D47E93095D6CDB23DBA2C /* Pods-osbond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbond.debug.xcconfig"; path = "Target Support Files/Pods-osbond/Pods-osbond.debug.xcconfig"; sourceTree = "<group>"; };
+		C4C4094444DF73ED7E6D51D6 /* Pods-osbondTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondTests.release.xcconfig"; path = "Target Support Files/Pods-osbondTests/Pods-osbondTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD18A931221B9EDE005D6CB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD90DE55221A8EE700918F3B /* osbond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osbond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD90DE58221A8EE700918F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD90DE5A221A8EE700918F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD90DE5D221A8EE700918F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD90DE5F221A8EEA00918F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD90DE62221A8EEA00918F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD90DE64221A8EEA00918F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD90DE69221A8EEA00918F3B /* osbondTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = osbondTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD90DE6D221A8EEA00918F3B /* osbondTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = osbondTests.swift; sourceTree = "<group>"; };
+		CD90DE6F221A8EEA00918F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD90DE74221A8EEA00918F3B /* osbondUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = osbondUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD90DE78221A8EEA00918F3B /* osbondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = osbondUITests.swift; sourceTree = "<group>"; };
+		CD90DE7A221A8EEA00918F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD90DE86221A8F9C00918F3B /* icon_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user.png; path = "../../../Osbond/Master Osbond/icon_user.png"; sourceTree = "<group>"; };
+		CD90DE88221A937200918F3B /* icon_launcher */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icon_launcher; path = ../../../../../Downloads/icon_launcher; sourceTree = "<group>"; };
+		CD90DE8D221A990700918F3B /* bg_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_login.jpg; path = "../../../../Osbond/Master Osbond/bg_login.jpg"; sourceTree = "<group>"; };
+		CD90DE91221AC25C00918F3B /* BtnLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnLogin.swift; sourceTree = "<group>"; };
+		CD90DE93221AD00C00918F3B /* logo_osbond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_osbond.png; path = ../../../../../../Downloads/logo_osbond.png; sourceTree = "<group>"; };
+		CDA56252221FA731008896D8 /* CustomToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
+		CDB0E85A221E55D800BF04F3 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		CDB0E85C221E846000BF04F3 /* ServerURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerURL.swift; sourceTree = "<group>"; };
+		D43B014F01662452A46CB1CB /* Pods-osbondUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondUITests.release.xcconfig"; path = "Target Support Files/Pods-osbondUITests/Pods-osbondUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DFC2E1A449D1E22C83EED155 /* Pods_osbondTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbondTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD90DE52221A8EE700918F3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D118918BC9D10AA52822FE /* Pods_osbond.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD90DE66221A8EEA00918F3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DF3B1F315CC6142D4C7FBD /* Pods_osbondTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD90DE71221A8EEA00918F3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181E9B218693FF548EFBE554 /* Pods_osbondUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36BA2A777EE3560CA5E97272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43F7700910541428CA177C57 /* Pods_osbond.framework */,
+				DFC2E1A449D1E22C83EED155 /* Pods_osbondTests.framework */,
+				0706F87D6E39A807901F8BD6 /* Pods_osbondUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C98EF0D622540A44F351EFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D47E93095D6CDB23DBA2C /* Pods-osbond.debug.xcconfig */,
+				297140B109A56C68171240DA /* Pods-osbond.release.xcconfig */,
+				5E359DD7932375D5478CA621 /* Pods-osbondTests.debug.xcconfig */,
+				C4C4094444DF73ED7E6D51D6 /* Pods-osbondTests.release.xcconfig */,
+				715CF5A5CB9C4CE909E18B9E /* Pods-osbondUITests.debug.xcconfig */,
+				D43B014F01662452A46CB1CB /* Pods-osbondUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD90DE4C221A8EE700918F3B = {
+			isa = PBXGroup;
+			children = (
+				CD90DE57221A8EE700918F3B /* osbond */,
+				CD90DE6C221A8EEA00918F3B /* osbondTests */,
+				CD90DE77221A8EEA00918F3B /* osbondUITests */,
+				CD90DE56221A8EE700918F3B /* Products */,
+				3C98EF0D622540A44F351EFF /* Pods */,
+				36BA2A777EE3560CA5E97272 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD90DE56221A8EE700918F3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD90DE55221A8EE700918F3B /* osbond.app */,
+				CD90DE69221A8EEA00918F3B /* osbondTests.xctest */,
+				CD90DE74221A8EEA00918F3B /* osbondUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD90DE57221A8EE700918F3B /* osbond */ = {
+			isa = PBXGroup;
+			children = (
+				CD90DE8A221A976A00918F3B /* image_assets */,
+				CD90DE90221AC18F00918F3B /* drawable */,
+				CDB0E859221E549300BF04F3 /* Utils */,
+				CD90DE86221A8F9C00918F3B /* icon_user.png */,
+				CD90DE58221A8EE700918F3B /* AppDelegate.swift */,
+				CD90DE5A221A8EE700918F3B /* ViewController.swift */,
+				CD90DE5C221A8EE700918F3B /* Main.storyboard */,
+				CD90DE5F221A8EEA00918F3B /* Assets.xcassets */,
+				CD90DE88221A937200918F3B /* icon_launcher */,
+				CD90DE61221A8EEA00918F3B /* LaunchScreen.storyboard */,
+				CD18A931221B9EDE005D6CB6 /* GoogleService-Info.plist */,
+				CD90DE64221A8EEA00918F3B /* Info.plist */,
+			);
+			path = osbond;
+			sourceTree = "<group>";
+		};
+		CD90DE6C221A8EEA00918F3B /* osbondTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD90DE6D221A8EEA00918F3B /* osbondTests.swift */,
+				CD90DE6F221A8EEA00918F3B /* Info.plist */,
+			);
+			path = osbondTests;
+			sourceTree = "<group>";
+		};
+		CD90DE77221A8EEA00918F3B /* osbondUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD90DE78221A8EEA00918F3B /* osbondUITests.swift */,
+				CD90DE7A221A8EEA00918F3B /* Info.plist */,
+			);
+			path = osbondUITests;
+			sourceTree = "<group>";
+		};
+		CD90DE8A221A976A00918F3B /* image_assets */ = {
+			isa = PBXGroup;
+			children = (
+				CD90DE93221AD00C00918F3B /* logo_osbond.png */,
+				CD90DE8D221A990700918F3B /* bg_login.jpg */,
+			);
+			path = image_assets;
+			sourceTree = "<group>";
+		};
+		CD90DE90221AC18F00918F3B /* drawable */ = {
+			isa = PBXGroup;
+			children = (
+				CD90DE91221AC25C00918F3B /* BtnLogin.swift */,
+				CDA56252221FA731008896D8 /* CustomToast.swift */,
+			);
+			path = drawable;
+			sourceTree = "<group>";
+		};
+		CDB0E859221E549300BF04F3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDB0E85A221E55D800BF04F3 /* SessionManager.swift */,
+				CDB0E85C221E846000BF04F3 /* ServerURL.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD90DE54221A8EE700918F3B /* osbond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD90DE7D221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbond" */;
+			buildPhases = (
+				07E3A98A38AE4625F244092E /* [CP] Check Pods Manifest.lock */,
+				CD90DE51221A8EE700918F3B /* Sources */,
+				CD90DE52221A8EE700918F3B /* Frameworks */,
+				CD90DE53221A8EE700918F3B /* Resources */,
+				74C902E9B92FD376A0C1C5E8 /* [CP] Embed Pods Frameworks */,
+				FC82196557C87D76E50368D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = osbond;
+			productName = osbond;
+			productReference = CD90DE55221A8EE700918F3B /* osbond.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD90DE68221A8EEA00918F3B /* osbondTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD90DE80221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbondTests" */;
+			buildPhases = (
+				9944F42774291090277563A0 /* [CP] Check Pods Manifest.lock */,
+				CD90DE65221A8EEA00918F3B /* Sources */,
+				CD90DE66221A8EEA00918F3B /* Frameworks */,
+				CD90DE67221A8EEA00918F3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD90DE6B221A8EEA00918F3B /* PBXTargetDependency */,
+			);
+			name = osbondTests;
+			productName = osbondTests;
+			productReference = CD90DE69221A8EEA00918F3B /* osbondTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD90DE73221A8EEA00918F3B /* osbondUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD90DE83221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbondUITests" */;
+			buildPhases = (
+				009454C2E703BD960A6C6745 /* [CP] Check Pods Manifest.lock */,
+				CD90DE70221A8EEA00918F3B /* Sources */,
+				CD90DE71221A8EEA00918F3B /* Frameworks */,
+				CD90DE72221A8EEA00918F3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD90DE76221A8EEA00918F3B /* PBXTargetDependency */,
+			);
+			name = osbondUITests;
+			productName = osbondUITests;
+			productReference = CD90DE74221A8EEA00918F3B /* osbondUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD90DE4D221A8EE700918F3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "gmedia ios dev 2";
+				TargetAttributes = {
+					CD90DE54221A8EE700918F3B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CD90DE68221A8EEA00918F3B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CD90DE54221A8EE700918F3B;
+					};
+					CD90DE73221A8EEA00918F3B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CD90DE54221A8EE700918F3B;
+					};
+				};
+			};
+			buildConfigurationList = CD90DE50221A8EE700918F3B /* Build configuration list for PBXProject "osbond" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD90DE4C221A8EE700918F3B;
+			productRefGroup = CD90DE56221A8EE700918F3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD90DE54221A8EE700918F3B /* osbond */,
+				CD90DE68221A8EEA00918F3B /* osbondTests */,
+				CD90DE73221A8EEA00918F3B /* osbondUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD90DE53221A8EE700918F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD90DE8E221A990700918F3B /* bg_login.jpg in Resources */,
+				CD18A932221B9EDE005D6CB6 /* GoogleService-Info.plist in Resources */,
+				CD90DE94221AD00D00918F3B /* logo_osbond.png in Resources */,
+				CD90DE63221A8EEA00918F3B /* LaunchScreen.storyboard in Resources */,
+				CD90DE60221A8EEA00918F3B /* Assets.xcassets in Resources */,
+				CD90DE89221A937200918F3B /* icon_launcher in Resources */,
+				CD90DE5E221A8EE700918F3B /* Main.storyboard in Resources */,
+				CD90DE87221A8F9C00918F3B /* icon_user.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD90DE67221A8EEA00918F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD90DE72221A8EEA00918F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		009454C2E703BD960A6C6745 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-osbondUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		07E3A98A38AE4625F244092E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-osbond-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74C902E9B92FD376A0C1C5E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9944F42774291090277563A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-osbondTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC82196557C87D76E50368D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD90DE51221A8EE700918F3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA56253221FA731008896D8 /* CustomToast.swift in Sources */,
+				CD90DE5B221A8EE700918F3B /* ViewController.swift in Sources */,
+				CD90DE92221AC25C00918F3B /* BtnLogin.swift in Sources */,
+				CDB0E85D221E846000BF04F3 /* ServerURL.swift in Sources */,
+				CDB0E85B221E55D800BF04F3 /* SessionManager.swift in Sources */,
+				CD90DE59221A8EE700918F3B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD90DE65221A8EEA00918F3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD90DE6E221A8EEA00918F3B /* osbondTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD90DE70221A8EEA00918F3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD90DE79221A8EEA00918F3B /* osbondUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD90DE6B221A8EEA00918F3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD90DE54221A8EE700918F3B /* osbond */;
+			targetProxy = CD90DE6A221A8EEA00918F3B /* PBXContainerItemProxy */;
+		};
+		CD90DE76221A8EEA00918F3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD90DE54221A8EE700918F3B /* osbond */;
+			targetProxy = CD90DE75221A8EEA00918F3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD90DE5C221A8EE700918F3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD90DE5D221A8EE700918F3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD90DE61221A8EEA00918F3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD90DE62221A8EEA00918F3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD90DE7B221A8EEA00918F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD90DE7C221A8EEA00918F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD90DE7E221A8EEA00918F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1D47E93095D6CDB23DBA2C /* Pods-osbond.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A639MSY8Y;
+				INFOPLIST_FILE = osbond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD90DE7F221A8EEA00918F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 297140B109A56C68171240DA /* Pods-osbond.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A639MSY8Y;
+				INFOPLIST_FILE = osbond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD90DE81221A8EEA00918F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E359DD7932375D5478CA621 /* Pods-osbondTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A639MSY8Y;
+				INFOPLIST_FILE = osbondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/osbond.app/osbond";
+			};
+			name = Debug;
+		};
+		CD90DE82221A8EEA00918F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C4094444DF73ED7E6D51D6 /* Pods-osbondTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A639MSY8Y;
+				INFOPLIST_FILE = osbondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/osbond.app/osbond";
+			};
+			name = Release;
+		};
+		CD90DE84221A8EEA00918F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 715CF5A5CB9C4CE909E18B9E /* Pods-osbondUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A639MSY8Y;
+				INFOPLIST_FILE = osbondUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbondUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = osbond;
+			};
+			name = Debug;
+		};
+		CD90DE85221A8EEA00918F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43B014F01662452A46CB1CB /* Pods-osbondUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A639MSY8Y;
+				INFOPLIST_FILE = osbondUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbondUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = osbond;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD90DE50221A8EE700918F3B /* Build configuration list for PBXProject "osbond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD90DE7B221A8EEA00918F3B /* Debug */,
+				CD90DE7C221A8EEA00918F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD90DE7D221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD90DE7E221A8EEA00918F3B /* Debug */,
+				CD90DE7F221A8EEA00918F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD90DE80221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbondTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD90DE81221A8EEA00918F3B /* Debug */,
+				CD90DE82221A8EEA00918F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD90DE83221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbondUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD90DE84221A8EEA00918F3B /* Debug */,
+				CD90DE85221A8EEA00918F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD90DE4D221A8EE700918F3B /* Project object */;
+}
