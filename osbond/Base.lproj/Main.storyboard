@@ -92,6 +92,14 @@
                                     <action selector="onLoginGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orZ-5q-ofv"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xw-m9-J1B">
+                                <rect key="frame" x="202" y="215" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="j7F-0B-gxE" kind="show" identifier="segToMain" id="9JS-8V-weG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -114,15 +122,284 @@
                     <connections>
                         <outlet property="btnLoginFb" destination="oQc-86-CKM" id="Ypk-TZ-75A"/>
                         <outlet property="btnLoginGoogle" destination="76J-tk-DPF" id="bX4-ra-E7w"/>
+                        <outlet property="btnToMain" destination="4xw-m9-J1B" id="MDx-VB-LIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="57.971014492753625" y="41.576086956521742"/>
         </scene>
+        <!--OSBOND-->
+        <scene sceneID="Gmm-Js-SoG">
+            <objects>
+                <viewController id="CYh-2v-GrL" customClass="HomeViewController" customModule="osbond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ma-Ah-mNI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_main.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-LX-HwD">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="EIe-j5-3o3">
+                                <rect key="frame" x="80" y="457" width="254" height="259"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oi-gO-sop" customClass="BtnLogin" customModule="osbond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="q4T-dV-Voj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="PROFILE" image="ic_profile.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="kgU-lk-2Jx" kind="show" id="sDD-rP-xHl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVT-ZT-bW2" customClass="BtnLogin" customModule="osbond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="254" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="z8U-sW-obD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="TOKEN" image="ic_ekupon.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6c-Hf-Lyd" customClass="BtnLogin" customModule="osbond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="136" width="254" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="gxu-21-i88"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="QR USER" image="ic_qr_code.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fds-db-eFe" customClass="BtnLogin" customModule="osbond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="204" width="254" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="TLh-bk-oPp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="BELI TOKEN" image="ic_shopping.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UgQ-98-qBa">
+                                <rect key="frame" x="20" y="74" width="374" height="363"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ekg-2w-W7k">
+                                    <size key="itemSize" width="378" height="366"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="J94-ta-S0B" customClass="HeaderViewCell" customModule="osbond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-1.6666666666666667" width="378" height="366"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="378" height="366"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-zw-bRI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="378" height="366"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mLw-zw-bRI" firstAttribute="top" secondItem="J94-ta-S0B" secondAttribute="top" id="1Cp-0o-4LV"/>
+                                            <constraint firstItem="mLw-zw-bRI" firstAttribute="leading" secondItem="J94-ta-S0B" secondAttribute="leading" id="5yA-9g-Urz"/>
+                                            <constraint firstAttribute="bottom" secondItem="mLw-zw-bRI" secondAttribute="bottom" id="VIk-sh-GIm"/>
+                                            <constraint firstAttribute="trailing" secondItem="mLw-zw-bRI" secondAttribute="trailing" id="v1v-4I-JWf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="ivHeader" destination="mLw-zw-bRI" id="aXt-YD-v96"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="CYh-2v-GrL" id="Rlu-VT-YaN"/>
+                                    <outlet property="delegate" destination="CYh-2v-GrL" id="cOu-IB-ccP"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-Rb-4Ie">
+                                <rect key="frame" x="40" y="360" width="334" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fxT-cs-aVs" firstAttribute="bottom" secondItem="EIe-j5-3o3" secondAttribute="bottom" constant="20" id="1qZ-zp-dMx"/>
+                            <constraint firstItem="UgQ-98-qBa" firstAttribute="leading" secondItem="fxT-cs-aVs" secondAttribute="leading" constant="20" id="3ht-bL-da3"/>
+                            <constraint firstItem="EIe-j5-3o3" firstAttribute="top" secondItem="UgQ-98-qBa" secondAttribute="bottom" constant="20" id="5ic-Rw-e94"/>
+                            <constraint firstItem="8Zg-LX-HwD" firstAttribute="top" secondItem="fxT-cs-aVs" secondAttribute="top" id="7i1-b4-t7g" customClass="Hom"/>
+                            <constraint firstAttribute="bottom" secondItem="8Zg-LX-HwD" secondAttribute="bottom" id="8Aj-rc-Z09"/>
+                            <constraint firstItem="fxT-cs-aVs" firstAttribute="trailing" secondItem="Y4a-Rb-4Ie" secondAttribute="trailing" constant="40" id="WLU-Ag-ZH0"/>
+                            <constraint firstItem="fxT-cs-aVs" firstAttribute="trailing" secondItem="EIe-j5-3o3" secondAttribute="trailing" constant="80" id="bjQ-fY-jta"/>
+                            <constraint firstItem="8Zg-LX-HwD" firstAttribute="leading" secondItem="fxT-cs-aVs" secondAttribute="leading" id="dT4-dN-SIn"/>
+                            <constraint firstItem="EIe-j5-3o3" firstAttribute="top" secondItem="Y4a-Rb-4Ie" secondAttribute="bottom" constant="60" id="e5u-ci-1LU"/>
+                            <constraint firstItem="fxT-cs-aVs" firstAttribute="trailing" secondItem="UgQ-98-qBa" secondAttribute="trailing" constant="20" id="fUj-4e-yWO"/>
+                            <constraint firstItem="Y4a-Rb-4Ie" firstAttribute="bottom" secondItem="UgQ-98-qBa" secondAttribute="bottom" id="kjg-sC-SsQ"/>
+                            <constraint firstItem="UgQ-98-qBa" firstAttribute="top" secondItem="fxT-cs-aVs" secondAttribute="top" constant="10" id="l5c-zn-en9"/>
+                            <constraint firstItem="EIe-j5-3o3" firstAttribute="leading" secondItem="fxT-cs-aVs" secondAttribute="leading" constant="80" id="m0a-wN-Rty"/>
+                            <constraint firstAttribute="trailing" secondItem="8Zg-LX-HwD" secondAttribute="trailing" id="of3-6K-H6J"/>
+                            <constraint firstItem="Y4a-Rb-4Ie" firstAttribute="leading" secondItem="fxT-cs-aVs" secondAttribute="leading" constant="40" id="reN-Kc-N4S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fxT-cs-aVs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="OSBOND" id="zHd-cB-OIk"/>
+                    <connections>
+                        <outlet property="collectionHeaderView" destination="UgQ-98-qBa" id="2Ok-ff-XTw"/>
+                        <outlet property="headerPageControl" destination="Y4a-Rb-4Ie" id="iia-TJ-bAW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8m-bM-wdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818.840579710145" y="41.576086956521742"/>
+        </scene>
+        <!--PROFILE-->
+        <scene sceneID="EBr-4O-SvW">
+            <objects>
+                <viewController id="kgU-lk-2Jx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FFG-56-KDT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg_main.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AOD-3V-OOX">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ty-Br-UI4">
+                                <rect key="frame" x="0.0" y="64" width="414" height="252"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wl1-SP-h0t">
+                                <rect key="frame" x="130" y="244" width="154" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wl1-SP-h0t" secondAttribute="height" multiplier="147:128" id="nt7-6y-lye"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LnG-O8-mo3" firstAttribute="trailing" secondItem="0ty-Br-UI4" secondAttribute="trailing" id="2md-2o-Kev"/>
+                            <constraint firstItem="AOD-3V-OOX" firstAttribute="leading" secondItem="LnG-O8-mo3" secondAttribute="leading" id="481-G1-cbQ"/>
+                            <constraint firstItem="LnG-O8-mo3" firstAttribute="trailing" secondItem="AOD-3V-OOX" secondAttribute="trailing" id="DxY-DQ-3SD"/>
+                            <constraint firstItem="0ty-Br-UI4" firstAttribute="leading" secondItem="LnG-O8-mo3" secondAttribute="leading" id="HkS-Nl-3TD"/>
+                            <constraint firstItem="LnG-O8-mo3" firstAttribute="bottom" secondItem="0ty-Br-UI4" secondAttribute="bottom" constant="420" id="KwQ-Z5-85b"/>
+                            <constraint firstItem="Wl1-SP-h0t" firstAttribute="top" secondItem="LnG-O8-mo3" secondAttribute="top" constant="180" id="OnL-BW-IdY"/>
+                            <constraint firstItem="LnG-O8-mo3" firstAttribute="bottom" secondItem="AOD-3V-OOX" secondAttribute="bottom" id="QKA-HW-koX"/>
+                            <constraint firstItem="LnG-O8-mo3" firstAttribute="trailing" secondItem="Wl1-SP-h0t" secondAttribute="trailing" constant="130" id="WeY-5o-8MW"/>
+                            <constraint firstItem="0ty-Br-UI4" firstAttribute="top" secondItem="LnG-O8-mo3" secondAttribute="top" id="iIP-iy-05Y"/>
+                            <constraint firstItem="Wl1-SP-h0t" firstAttribute="leading" secondItem="LnG-O8-mo3" secondAttribute="leading" constant="130" id="tAc-pF-IkH"/>
+                            <constraint firstItem="AOD-3V-OOX" firstAttribute="top" secondItem="FFG-56-KDT" secondAttribute="top" id="wJP-eY-eaC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LnG-O8-mo3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PROFILE" id="NUE-hZ-fei">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="Jlc-TK-rmM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJi-0k-uZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2716" y="-810"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="edR-Qr-Nha">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j7F-0B-gxE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="vKG-2b-UjU">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CYh-2v-GrL" kind="relationship" relationship="rootViewController" id="IEN-4F-fI4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOk-6S-gq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.59420289855075" y="41.576086956521742"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg_login.jpg" width="1240" height="2898"/>
+        <image name="bg_main.jpg" width="750" height="1334"/>
+        <image name="ic_ekupon.png" width="32" height="32"/>
+        <image name="ic_profile.png" width="32" height="32"/>
+        <image name="ic_qr_code.png" width="32" height="32"/>
+        <image name="ic_shopping.png" width="32" height="32"/>
         <image name="logo_osbond.png" width="3175" height="2916"/>
     </resources>
 </document>

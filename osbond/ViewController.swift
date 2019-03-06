@@ -17,8 +17,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     let session = SessionManager()
     var currentUser: User? = nil
     var typeLogin: String = "GOOGLE"
-    var pbLoading: UIActivityIndicatorView = UIActivityIndicatorView()
+    var pbLoading: progressLoading = progressLoading()
     
+    @IBOutlet weak var btnToMain: UIButton!
     @IBOutlet weak var btnLoginGoogle: GIDSignInButton!
     @IBOutlet weak var btnLoginFb: FBSDKLoginButton!
     
@@ -34,14 +35,14 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         
         // check session
         if session.isLogin() {
-            print("sudah")
+            print("sudah login")
         }else{
-            print("belum")
+            print("belum login")
         }
         
         // Check is already login with sosmed
         if Auth.auth().currentUser != nil {
-           
+            
             print(TAG+"Dari View")
             currentUser = Auth.auth().currentUser
             doLogin()
@@ -49,9 +50,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
             print(TAG+"belum")
         }
     }
-
+    
     @IBAction func onLoginGoogle(_ sender: Any) {
-     
+        
         //GIDSignIn.sharedInstance().signIn()
     }
     
@@ -133,7 +134,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     
     func doLogin(){
         
-        //self.showLoading()
+        self.showLoading()
         let url = URL(string: ServerURL.login)
         var request = URLRequest(url: url!)
         
@@ -141,9 +142,100 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         request.setValue("frontend-client", forHTTPHeaderField: "Client-Service")
         request.setValue("gmedia_osbondgym", forHTTPHeaderField: "Auth-Key")
         
-        let data : [String: Any] =
-            ["uid": currentUser?.uid ?? ""]
+        if currentUser != nil {
+            
+            let photoUrl =  String(describing: currentUser?.photoURL)
+            
+            let data : [String: Any] =
+                ["uid": currentUser?.uid ?? ""
+                    ,"foto": photoUrl
+                    ,"fcm_id": ""
+            ]
+            
+            do{
+                
+                let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
+                
+                let jsonStr = String(data:jsonData, encoding: .ascii)
+                
+                request.httpBody = jsonStr?.data(using: .utf8)
+                
+                request.httpMethod = "POST"
+                
+            }catch{
+                
+            }
+            
+            let proses = URLSession.shared.dataTask(with: request){
+                data, response, error in
+                
+                self.hideLoading()
+                
+                if let jsonValue = String(data: data!, encoding: .ascii){
+                    if let jsonData = jsonValue.data(using: .utf8) {
+                        
+                        do {
+                            
+                            let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as! NSDictionary
+                            
+                            let metadata = json.value(forKey: "metadata") as? NSDictionary
+                            let responseApi = json.value(forKey: "response") as? [String : String]
+                            
+                            let status = metadata?.value(forKey: "status") as? Int64
+                            let message = metadata?.value(forKey: "message") as? String
+                            
+                            if status == 200 { // existing user
+                                
+                                CustomToast.show(message: message ?? "", controller: self)
+                                let token = responseApi?["token"] ?? "";
+                                self.session.saveSession(uid: self.currentUser?.uid ?? "", email: self.currentUser?.email ?? "", displayName: self.currentUser?.displayName ?? "", token: token)
+                                self.redirectToMain()
+                                
+                            }else if status == 404 { // new User
+                                
+                                self.doRegister()
+                            }
+                            else{
+                                CustomToast.show(message: "Terjadi kesalalahan saat memuat data, harap ulangi kembali", controller: self)
+                            }
+                            
+                        }catch let parsingError{
+                            
+                            print("Error", parsingError)
+                        }
+                    }
+                }
+                //            DispatchQueue.main.async {
+                //                self.navigationController?.popViewController(animated: true)
+                //            }
+            }
+            
+            proses.resume()
+        }
+    }
+    
+    
+    func doRegister(){
         
+        self.showLoading()
+        let url = URL(string: ServerURL.register)
+        var request = URLRequest(url: url!)
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("frontend-client", forHTTPHeaderField: "Client-Service")
+        request.setValue("gmedia_osbondgym", forHTTPHeaderField: "Auth-Key")
+        
+        let photoUrl =  String(describing: currentUser?.photoURL)
+        let data : [String: Any] =
+            ["uid": currentUser?.uid ?? ""
+                ,"email": currentUser?.email ?? ""
+                ,"profile_name": currentUser?.displayName ?? ""
+                ,"foto": photoUrl
+                ,"type": typeLogin
+                ,"fcm_id": ""
+                ,"insert_at": ""
+                ,"user_insert": currentUser?.uid ?? ""
+        ]
         do{
             
             let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
@@ -161,11 +253,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
         let proses = URLSession.shared.dataTask(with: request){
             data, response, error in
             
-            //self.hideLoading()
+            self.hideLoading()
             
             if let jsonValue = String(data: data!, encoding: .ascii){
                 if let jsonData = jsonValue.data(using: .utf8) {
-                 
+                    
                     do {
                         
                         let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as! NSDictionary
@@ -176,16 +268,14 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
                         let status = metadata?.value(forKey: "status") as? Int64
                         let message = metadata?.value(forKey: "message") as? String
                         
-                        if status == 200 { // existing user
-                         
-                            CustomToast.show(message: message ?? "", controller: self)
-                           
-                        }else if status == 404 { // new User
+                        if status == 200 { // berhasil register
                             
+                            let token = responseApi?["token"] ?? "";
+                            self.session.saveSession(uid: self.currentUser?.uid ?? "", email: self.currentUser?.email ?? "", displayName: self.currentUser?.displayName ?? "", token: token)
                             CustomToast.show(message: message ?? "", controller: self)
-                        }
-                        else{
-                            CustomToast.show(message: "Terjadi kesalalahan saat memuat data, harap ulangi kembali", controller: self)
+                            self.redirectToMain()
+                        }else{
+                            CustomToast.show(message: message ?? "", controller: self)
                         }
                         
                     }catch let parsingError{
@@ -194,33 +284,24 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
                     }
                 }
             }
-//            DispatchQueue.main.async {
-//                self.navigationController?.popViewController(animated: true)
-//            }
         }
         
         proses.resume()
     }
     
-    
     func showLoading(){
         
-        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
-        
-        pbLoading = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-        pbLoading.hidesWhenStopped = true
-        pbLoading.style = UIActivityIndicatorView.Style.gray
-        pbLoading.startAnimating();
-        
-        alert.view.addSubview(pbLoading)
-        present(alert, animated: true, completion: nil)
-        
+        pbLoading.showActivityIndicator(uiView: self.view)
     }
     
     func hideLoading(){
         
-        dismiss(animated: false, completion: nil)
-        pbLoading.stopAnimating()
+        pbLoading.hideActivityIndicator(uiView: self.view)
+    }
+    
+    func redirectToMain(){
+        //btnToMain.sendActions(for: .touchUpInside)
+        performSegue(withIdentifier: "segToMain", sender: self)
     }
     
 }
