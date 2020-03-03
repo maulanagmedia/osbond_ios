@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VKuponController" customModule="osbond" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bF-zY-Vqi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G45-wJ-IhY">
+                            <rect key="frame" x="35" y="132" width="305" height="403"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_kupon_gratis" translatesAutoresizingMaskIntoConstraints="NO" id="oJd-BX-cK9">
+                                    <rect key="frame" x="33" y="55" width="239" height="206"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXD-Ml-TVY" customClass="BorderedUIView" customModule="osbond" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="275" width="240" height="98"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="W3H-pZ-b2v">
+                                            <rect key="frame" x="8" y="13" width="224" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.96714240309999999" green="0.73976820710000002" blue="0.0065926131790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgA-F3-Pnp">
+                                            <rect key="frame" x="105" y="54" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="OK">
+                                                <color key="titleColor" red="0.96714240312576294" green="0.023376094477758142" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96714240309999999" green="0.73976820710000002" blue="0.0065926131790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCW-Uw-n47" customClass="BtnLogin" customModule="osbond" customModuleProvider="target">
+                                    <rect key="frame" x="219" y="35" width="39" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Skip">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onSkipClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="uG9-Cp-mT6"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="oJd-BX-cK9" firstAttribute="leading" secondItem="G45-wJ-IhY" secondAttribute="leading" constant="33" id="8Zf-GK-mCc"/>
+                                <constraint firstItem="oJd-BX-cK9" firstAttribute="top" secondItem="G45-wJ-IhY" secondAttribute="top" constant="90" id="K3O-LY-s9r"/>
+                                <constraint firstItem="nXD-Ml-TVY" firstAttribute="top" secondItem="oJd-BX-cK9" secondAttribute="bottom" constant="14" id="LEy-l2-e8R"/>
+                                <constraint firstAttribute="bottom" secondItem="oJd-BX-cK9" secondAttribute="bottom" constant="102" id="arR-rY-3an"/>
+                                <constraint firstItem="nXD-Ml-TVY" firstAttribute="leading" secondItem="G45-wJ-IhY" secondAttribute="leading" constant="33" id="iUI-Yl-qO8"/>
+                                <constraint firstAttribute="bottom" secondItem="nXD-Ml-TVY" secondAttribute="bottom" constant="30" id="qkk-Mm-I1h"/>
+                                <constraint firstAttribute="trailing" secondItem="nXD-Ml-TVY" secondAttribute="trailing" constant="33" id="tOn-zt-EPE"/>
+                                <constraint firstAttribute="trailing" secondItem="oJd-BX-cK9" secondAttribute="trailing" constant="33" id="wHI-LY-jXT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="r5C-eB-HIB"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1bF-zY-Vqi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4yL-Rc-Eg2"/>
+                <constraint firstItem="1bF-zY-Vqi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gH0-KU-vAP"/>
+                <constraint firstItem="1bF-zY-Vqi" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="hAv-J1-c2h"/>
+                <constraint firstItem="1bF-zY-Vqi" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="vLf-hK-i8g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="edtNomor" destination="W3H-pZ-b2v" id="pVv-1G-nR5"/>
+                <outlet property="parentView" destination="G45-wJ-IhY" id="XNh-gc-uhr"/>
+                <outlet property="superParentView" destination="1bF-zY-Vqi" id="LH5-ib-Yu9"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="115.59220389805098"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_kupon_gratis" width="1029" height="880"/>
+    </resources>
+</document>

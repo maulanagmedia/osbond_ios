@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181E9B218693FF548EFBE554 /* Pods_osbondUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0706F87D6E39A807901F8BD6 /* Pods_osbondUITests.framework */; };
-		51D118918BC9D10AA52822FE /* Pods_osbond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F7700910541428CA177C57 /* Pods_osbond.framework */; };
+		6B7C05FC06908221CE84D9F1 /* Pods_osbondTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FECD54AC5D07FACD821A3CE /* Pods_osbondTests.framework */; };
+		6CB6EB02E124665AC1612695 /* Pods_osbondUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3D99ED4C5217BCE42A2E53 /* Pods_osbondUITests.framework */; };
+		C5B6479318E9DE935E51C28F /* Pods_osbond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D856596364B970B4F01D61F9 /* Pods_osbond.framework */; };
 		CD4BA629222F789F00EB4E6F /* CustomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA628222F789F00EB4E6F /* CustomItem.swift */; };
+		CD4BA62B222FA9A000EB4E6F /* VKuponController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD4BA62A222FA99F00EB4E6F /* VKuponController.xib */; };
+		CD4BA62F222FAAE900EB4E6F /* ic_gratis_token.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4BA62E222FAAE900EB4E6F /* ic_gratis_token.png */; };
+		CD4BA637222FB25800EB4E6F /* VKuponController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA636222FB25800EB4E6F /* VKuponController.swift */; };
+		CD4BA639222FB58E00EB4E6F /* BorderedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA638222FB58E00EB4E6F /* BorderedUIView.swift */; };
+		CD8C1535223BB1FD002C4DF5 /* ic_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8C1534223BB1FD002C4DF5 /* ic_camera.png */; };
 		CD90DE59221A8EE700918F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE58221A8EE700918F3B /* AppDelegate.swift */; };
 		CD90DE5B221A8EE700918F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE5A221A8EE700918F3B /* ViewController.swift */; };
 		CD90DE5E221A8EE700918F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD90DE5C221A8EE700918F3B /* Main.storyboard */; };
@@ -18,21 +24,10 @@
 		CD90DE6E221A8EEA00918F3B /* osbondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE6D221A8EEA00918F3B /* osbondTests.swift */; };
 		CD90DE79221A8EEA00918F3B /* osbondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE78221A8EEA00918F3B /* osbondUITests.swift */; };
 		CD90DE92221AC25C00918F3B /* BtnLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90DE91221AC25C00918F3B /* BtnLogin.swift */; };
+		CD928B862238F551001034E8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD928B852238F551001034E8 /* EditProfileViewController.swift */; };
 		CDA56253221FA731008896D8 /* CustomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA56252221FA731008896D8 /* CustomToast.swift */; };
 		CDA56255221FF1FB008896D8 /* progressLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA56254221FF1FB008896D8 /* progressLoading.swift */; };
 		CDA590D3222E2055004D296F /* icon_user.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590D2222E2054004D296F /* icon_user.png */; };
-		CDA590E2222E20B1004D296F /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590D6222E20AC004D296F /* image5.jpg */; };
-		CDA590E3222E20B1004D296F /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590D7222E20AD004D296F /* image3.jpg */; };
-		CDA590E4222E20B1004D296F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590D8222E20AD004D296F /* image1.jpg */; };
-		CDA590E5222E20B1004D296F /* dotActive.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590D9222E20AE004D296F /* dotActive.png */; };
-		CDA590E6222E20B1004D296F /* dotInactive.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590DA222E20AE004D296F /* dotInactive.png */; };
-		CDA590E7222E20B1004D296F /* dotActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590DB222E20AE004D296F /* dotActive@2x.png */; };
-		CDA590E8222E20B1004D296F /* dotInactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590DC222E20AF004D296F /* dotInactive@2x.png */; };
-		CDA590E9222E20B1004D296F /* dotActive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590DD222E20AF004D296F /* dotActive@3x.png */; };
-		CDA590EA222E20B1004D296F /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590DE222E20AF004D296F /* image4.jpg */; };
-		CDA590EB222E20B1004D296F /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590DF222E20B0004D296F /* image2.jpg */; };
-		CDA590EC222E20B1004D296F /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590E0222E20B0004D296F /* image6.jpg */; };
-		CDA590ED222E20B1004D296F /* dotInactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590E1222E20B1004D296F /* dotInactive@3x.png */; };
 		CDA590F0222E20E1004D296F /* bg_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590EE222E20E1004D296F /* bg_main.jpg */; };
 		CDA590F1222E20E1004D296F /* bg_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDA590EF222E20E1004D296F /* bg_login.jpg */; };
 		CDA590FB222E2CA1004D296F /* ic_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590FA222E2C9F004D296F /* ic_profile.png */; };
@@ -40,13 +35,33 @@
 		CDA590FF222E2EBE004D296F /* ic_qr_code.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA590FE222E2EBC004D296F /* ic_qr_code.png */; };
 		CDA59101222E2F09004D296F /* ic_shopping.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA59100222E2F03004D296F /* ic_shopping.png */; };
 		CDA59104222E533E004D296F /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA59103222E533E004D296F /* HeaderViewCell.swift */; };
+		CDA8B03E224493F3007202C8 /* logo_ekupon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA8B03D224493F2007202C8 /* logo_ekupon.png */; };
+		CDA8B0402244BDDD007202C8 /* ic_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA8B03F2244BDDD007202C8 /* ic_calendar.png */; };
+		CDA8B0422244D7FB007202C8 /* FormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA8B0412244D7FB007202C8 /* FormatDate.swift */; };
+		CDA8B0442244DEC4007202C8 /* ItemValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA8B0432244DEC4007202C8 /* ItemValidation.swift */; };
+		CDA8B0462244EFD5007202C8 /* TokenQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA8B0452244EFD5007202C8 /* TokenQRController.swift */; };
 		CDB0E85B221E55D800BF04F3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0E85A221E55D800BF04F3 /* SessionManager.swift */; };
 		CDB0E85D221E846000BF04F3 /* ServerURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0E85C221E846000BF04F3 /* ServerURL.swift */; };
 		CDB30241222D2EE300DE538D /* logo_osbond.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB30240222D2EE300DE538D /* logo_osbond.png */; };
 		CDB30243222D2EF400DE538D /* icon_launcher in Resources */ = {isa = PBXBuildFile; fileRef = CDB30242222D2EF400DE538D /* icon_launcher */; };
 		CDB30245222D2EFE00DE538D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDB30244222D2EFD00DE538D /* GoogleService-Info.plist */; };
 		CDB3026F222D391400DE538D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3026E222D391400DE538D /* HomeViewController.swift */; };
-		D4DF3B1F315CC6142D4C7FBD /* Pods_osbondTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC2E1A449D1E22C83EED155 /* Pods_osbondTests.framework */; };
+		CDBD8790224DFBAE006ADDA1 /* MidtransRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD878F224DFBAE006ADDA1 /* MidtransRes.swift */; };
+		CDC148EC2236696D008EBF83 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC148EB2236696C008EBF83 /* settings.png */; };
+		CDC148EE22366E8A008EBF83 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC148ED22366E8A008EBF83 /* ProfileViewController.swift */; };
+		CDD4C57222437648001D7A7F /* KuponController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4C57122437648001D7A7F /* KuponController.swift */; };
+		CDD4C574224378F5001D7A7F /* QRUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4C573224378F5001D7A7F /* QRUserController.swift */; };
+		CDD4C578224394D6001D7A7F /* background_qr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDD4C575224394CF001D7A7F /* background_qr.jpg */; };
+		CDD4C579224394D6001D7A7F /* kupon_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD4C576224394D2001D7A7F /* kupon_gold.png */; };
+		CDD4C57A224394D6001D7A7F /* kupon_silver.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD4C577224394D3001D7A7F /* kupon_silver.png */; };
+		CDD4C57C22439845001D7A7F /* bg_qr_user.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDD4C57B22439843001D7A7F /* bg_qr_user.jpg */; };
+		CDD4C57E2243A1E9001D7A7F /* TokenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4C57D2243A1E9001D7A7F /* TokenViewCell.swift */; };
+		CDD5DF3F2232817A00BAD908 /* HomeOTPFreeCupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5DF3E2232817A00BAD908 /* HomeOTPFreeCupon.swift */; };
+		CDD90006224C7C620097478C /* CheckoutTokenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD90005224C7C620097478C /* CheckoutTokenController.swift */; };
+		CDDCB8332248C81100353CA3 /* BuyTokenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCB8322248C81100353CA3 /* BuyTokenController.swift */; };
+		CDDCB8352248CCD600353CA3 /* SBCardPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCB8342248CCD600353CA3 /* SBCardPopupViewController.swift */; };
+		CDDCB8372248E87200353CA3 /* PaketTokenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCB8362248E87200353CA3 /* PaketTokenViewCell.swift */; };
+		CDEAAAC7224B715000E3ED79 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAAAC6224B714F00E3ED79 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,14 +82,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0706F87D6E39A807901F8BD6 /* Pods_osbondUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbondUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		297140B109A56C68171240DA /* Pods-osbond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbond.release.xcconfig"; path = "Target Support Files/Pods-osbond/Pods-osbond.release.xcconfig"; sourceTree = "<group>"; };
-		43F7700910541428CA177C57 /* Pods_osbond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E359DD7932375D5478CA621 /* Pods-osbondTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondTests.debug.xcconfig"; path = "Target Support Files/Pods-osbondTests/Pods-osbondTests.debug.xcconfig"; sourceTree = "<group>"; };
-		715CF5A5CB9C4CE909E18B9E /* Pods-osbondUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondUITests.debug.xcconfig"; path = "Target Support Files/Pods-osbondUITests/Pods-osbondUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF1D47E93095D6CDB23DBA2C /* Pods-osbond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbond.debug.xcconfig"; path = "Target Support Files/Pods-osbond/Pods-osbond.debug.xcconfig"; sourceTree = "<group>"; };
-		C4C4094444DF73ED7E6D51D6 /* Pods-osbondTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondTests.release.xcconfig"; path = "Target Support Files/Pods-osbondTests/Pods-osbondTests.release.xcconfig"; sourceTree = "<group>"; };
+		20BCBDF4BECD75B30CADDB88 /* Pods-osbondTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondTests.debug.xcconfig"; path = "Target Support Files/Pods-osbondTests/Pods-osbondTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE9FFF3D763921145AFFE02 /* Pods-osbondUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondUITests.release.xcconfig"; path = "Target Support Files/Pods-osbondUITests/Pods-osbondUITests.release.xcconfig"; sourceTree = "<group>"; };
+		512329C0CD97B9D061D4587B /* Pods-osbondUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondUITests.debug.xcconfig"; path = "Target Support Files/Pods-osbondUITests/Pods-osbondUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5FECD54AC5D07FACD821A3CE /* Pods_osbondTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbondTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C74B129004EDD2F845E93E /* Pods-osbond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbond.debug.xcconfig"; path = "Target Support Files/Pods-osbond/Pods-osbond.debug.xcconfig"; sourceTree = "<group>"; };
+		9F135B9F2769D013AD8288CA /* Pods-osbond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbond.release.xcconfig"; path = "Target Support Files/Pods-osbond/Pods-osbond.release.xcconfig"; sourceTree = "<group>"; };
+		CD498BA222575D200066DA26 /* osbond.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = osbond.entitlements; sourceTree = "<group>"; };
 		CD4BA628222F789F00EB4E6F /* CustomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItem.swift; sourceTree = "<group>"; };
+		CD4BA62A222FA99F00EB4E6F /* VKuponController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VKuponController.xib; sourceTree = "<group>"; };
+		CD4BA62E222FAAE900EB4E6F /* ic_gratis_token.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_gratis_token.png; path = ../../../res/ic_gratis_token.png; sourceTree = "<group>"; };
+		CD4BA636222FB25800EB4E6F /* VKuponController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKuponController.swift; sourceTree = "<group>"; };
+		CD4BA638222FB58E00EB4E6F /* BorderedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedUIView.swift; sourceTree = "<group>"; };
+		CD8C1534223BB1FD002C4DF5 /* ic_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_camera.png; path = ../../../ic_camera.png; sourceTree = "<group>"; };
 		CD90DE55221A8EE700918F3B /* osbond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osbond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD90DE58221A8EE700918F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD90DE5A221A8EE700918F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,21 +109,10 @@
 		CD90DE78221A8EEA00918F3B /* osbondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = osbondUITests.swift; sourceTree = "<group>"; };
 		CD90DE7A221A8EEA00918F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD90DE91221AC25C00918F3B /* BtnLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnLogin.swift; sourceTree = "<group>"; };
+		CD928B852238F551001034E8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		CDA56252221FA731008896D8 /* CustomToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
 		CDA56254221FF1FB008896D8 /* progressLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressLoading.swift; sourceTree = "<group>"; };
 		CDA590D2222E2054004D296F /* icon_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user.png; path = ../../../Backup/icon_user.png; sourceTree = "<group>"; };
-		CDA590D6222E20AC004D296F /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image5.jpg; path = ../../../../Backup/Resources/image5.jpg; sourceTree = "<group>"; };
-		CDA590D7222E20AD004D296F /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = ../../../../Backup/Resources/image3.jpg; sourceTree = "<group>"; };
-		CDA590D8222E20AD004D296F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = ../../../../Backup/Resources/image1.jpg; sourceTree = "<group>"; };
-		CDA590D9222E20AE004D296F /* dotActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dotActive.png; path = ../../../../Backup/Resources/dotActive.png; sourceTree = "<group>"; };
-		CDA590DA222E20AE004D296F /* dotInactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dotInactive.png; path = ../../../../Backup/Resources/dotInactive.png; sourceTree = "<group>"; };
-		CDA590DB222E20AE004D296F /* dotActive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dotActive@2x.png"; path = "../../../../Backup/Resources/dotActive@2x.png"; sourceTree = "<group>"; };
-		CDA590DC222E20AF004D296F /* dotInactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dotInactive@2x.png"; path = "../../../../Backup/Resources/dotInactive@2x.png"; sourceTree = "<group>"; };
-		CDA590DD222E20AF004D296F /* dotActive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dotActive@3x.png"; path = "../../../../Backup/Resources/dotActive@3x.png"; sourceTree = "<group>"; };
-		CDA590DE222E20AF004D296F /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image4.jpg; path = ../../../../Backup/Resources/image4.jpg; sourceTree = "<group>"; };
-		CDA590DF222E20B0004D296F /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = ../../../../Backup/Resources/image2.jpg; sourceTree = "<group>"; };
-		CDA590E0222E20B0004D296F /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image6.jpg; path = ../../../../Backup/Resources/image6.jpg; sourceTree = "<group>"; };
-		CDA590E1222E20B1004D296F /* dotInactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dotInactive@3x.png"; path = "../../../../Backup/Resources/dotInactive@3x.png"; sourceTree = "<group>"; };
 		CDA590EE222E20E1004D296F /* bg_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_main.jpg; path = "../../../../Osbond/Master Osbond/bg_main.jpg"; sourceTree = "<group>"; };
 		CDA590EF222E20E1004D296F /* bg_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_login.jpg; path = "../../../../Osbond/Master Osbond/bg_login.jpg"; sourceTree = "<group>"; };
 		CDA590FA222E2C9F004D296F /* ic_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_profile.png; path = "../../../../Backup/appiconmaker.co_ios (1)/ic_profile.png"; sourceTree = "<group>"; };
@@ -111,14 +120,36 @@
 		CDA590FE222E2EBC004D296F /* ic_qr_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_qr_code.png; path = "../../../../Backup/appiconmaker.co_ios (2)/ic_qr_code.png"; sourceTree = "<group>"; };
 		CDA59100222E2F03004D296F /* ic_shopping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_shopping.png; path = "../../../../Backup/appiconmaker.co_ios (3)/ic_shopping.png"; sourceTree = "<group>"; };
 		CDA59103222E533E004D296F /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
+		CDA8B03D224493F2007202C8 /* logo_ekupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_ekupon.png; path = ../../../logo_ekupon.png; sourceTree = "<group>"; };
+		CDA8B03F2244BDDD007202C8 /* ic_calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_calendar.png; path = ../../../ic_calendar.png; sourceTree = "<group>"; };
+		CDA8B0412244D7FB007202C8 /* FormatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDate.swift; sourceTree = "<group>"; };
+		CDA8B0432244DEC4007202C8 /* ItemValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemValidation.swift; sourceTree = "<group>"; };
+		CDA8B0452244EFD5007202C8 /* TokenQRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenQRController.swift; sourceTree = "<group>"; };
 		CDB0E85A221E55D800BF04F3 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		CDB0E85C221E846000BF04F3 /* ServerURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerURL.swift; sourceTree = "<group>"; };
 		CDB30240222D2EE300DE538D /* logo_osbond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_osbond.png; path = ../../../logo_osbond.png; sourceTree = "<group>"; };
 		CDB30242222D2EF400DE538D /* icon_launcher */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icon_launcher; path = ../../icon_launcher; sourceTree = "<group>"; };
 		CDB30244222D2EFD00DE538D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDB3026E222D391400DE538D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D43B014F01662452A46CB1CB /* Pods-osbondUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondUITests.release.xcconfig"; path = "Target Support Files/Pods-osbondUITests/Pods-osbondUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DFC2E1A449D1E22C83EED155 /* Pods_osbondTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbondTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBD878F224DFBAE006ADDA1 /* MidtransRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidtransRes.swift; sourceTree = "<group>"; };
+		CDC148EB2236696C008EBF83 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../../settings.png; sourceTree = "<group>"; };
+		CDC148ED22366E8A008EBF83 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CDD4C57122437648001D7A7F /* KuponController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuponController.swift; sourceTree = "<group>"; };
+		CDD4C573224378F5001D7A7F /* QRUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRUserController.swift; sourceTree = "<group>"; };
+		CDD4C575224394CF001D7A7F /* background_qr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background_qr.jpg; path = ../../../background_qr.jpg; sourceTree = "<group>"; };
+		CDD4C576224394D2001D7A7F /* kupon_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kupon_gold.png; path = ../../../kupon_gold.png; sourceTree = "<group>"; };
+		CDD4C577224394D3001D7A7F /* kupon_silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kupon_silver.png; path = ../../../kupon_silver.png; sourceTree = "<group>"; };
+		CDD4C57B22439843001D7A7F /* bg_qr_user.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_qr_user.jpg; path = ../../../bg_qr_user.jpg; sourceTree = "<group>"; };
+		CDD4C57D2243A1E9001D7A7F /* TokenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenViewCell.swift; sourceTree = "<group>"; };
+		CDD5DF3E2232817A00BAD908 /* HomeOTPFreeCupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOTPFreeCupon.swift; sourceTree = "<group>"; };
+		CDD90005224C7C620097478C /* CheckoutTokenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTokenController.swift; sourceTree = "<group>"; };
+		CDDCB8322248C81100353CA3 /* BuyTokenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTokenController.swift; sourceTree = "<group>"; };
+		CDDCB8342248CCD600353CA3 /* SBCardPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBCardPopupViewController.swift; path = ../../../SBCardPopupViewController.swift; sourceTree = "<group>"; };
+		CDDCB8362248E87200353CA3 /* PaketTokenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketTokenViewCell.swift; sourceTree = "<group>"; };
+		CDEAAAC6224B714F00E3ED79 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		D856596364B970B4F01D61F9 /* Pods_osbond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3D99ED4C5217BCE42A2E53 /* Pods_osbondUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osbondUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28F16FA8AE71BF5E9C0BBCE /* Pods-osbondTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osbondTests.release.xcconfig"; path = "Target Support Files/Pods-osbondTests/Pods-osbondTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51D118918BC9D10AA52822FE /* Pods_osbond.framework in Frameworks */,
+				C5B6479318E9DE935E51C28F /* Pods_osbond.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DF3B1F315CC6142D4C7FBD /* Pods_osbondTests.framework in Frameworks */,
+				6B7C05FC06908221CE84D9F1 /* Pods_osbondTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,32 +173,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181E9B218693FF548EFBE554 /* Pods_osbondUITests.framework in Frameworks */,
+				6CB6EB02E124665AC1612695 /* Pods_osbondUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36BA2A777EE3560CA5E97272 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				43F7700910541428CA177C57 /* Pods_osbond.framework */,
-				DFC2E1A449D1E22C83EED155 /* Pods_osbondTests.framework */,
-				0706F87D6E39A807901F8BD6 /* Pods_osbondUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3C98EF0D622540A44F351EFF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF1D47E93095D6CDB23DBA2C /* Pods-osbond.debug.xcconfig */,
-				297140B109A56C68171240DA /* Pods-osbond.release.xcconfig */,
-				5E359DD7932375D5478CA621 /* Pods-osbondTests.debug.xcconfig */,
-				C4C4094444DF73ED7E6D51D6 /* Pods-osbondTests.release.xcconfig */,
-				715CF5A5CB9C4CE909E18B9E /* Pods-osbondUITests.debug.xcconfig */,
-				D43B014F01662452A46CB1CB /* Pods-osbondUITests.release.xcconfig */,
+				93C74B129004EDD2F845E93E /* Pods-osbond.debug.xcconfig */,
+				9F135B9F2769D013AD8288CA /* Pods-osbond.release.xcconfig */,
+				20BCBDF4BECD75B30CADDB88 /* Pods-osbondTests.debug.xcconfig */,
+				F28F16FA8AE71BF5E9C0BBCE /* Pods-osbondTests.release.xcconfig */,
+				512329C0CD97B9D061D4587B /* Pods-osbondUITests.debug.xcconfig */,
+				2DE9FFF3D763921145AFFE02 /* Pods-osbondUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -180,7 +201,7 @@
 				CD90DE77221A8EEA00918F3B /* osbondUITests */,
 				CD90DE56221A8EE700918F3B /* Products */,
 				3C98EF0D622540A44F351EFF /* Pods */,
-				36BA2A777EE3560CA5E97272 /* Frameworks */,
+				F5F167301AD1E18B7CFD23B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,8 +218,8 @@
 		CD90DE57221A8EE700918F3B /* osbond */ = {
 			isa = PBXGroup;
 			children = (
+				CD498BA222575D200066DA26 /* osbond.entitlements */,
 				CDA59102222E52F3004D296F /* Adapter */,
-				CDB30255222D38A600DE538D /* Resources */,
 				CD90DE8A221A976A00918F3B /* image_assets */,
 				CD90DE90221AC18F00918F3B /* drawable */,
 				CDB0E859221E549300BF04F3 /* Utils */,
@@ -206,6 +227,14 @@
 				CD90DE58221A8EE700918F3B /* AppDelegate.swift */,
 				CD90DE5A221A8EE700918F3B /* ViewController.swift */,
 				CDB3026E222D391400DE538D /* HomeViewController.swift */,
+				CDD5DF3E2232817A00BAD908 /* HomeOTPFreeCupon.swift */,
+				CDC148ED22366E8A008EBF83 /* ProfileViewController.swift */,
+				CD928B852238F551001034E8 /* EditProfileViewController.swift */,
+				CDD4C57122437648001D7A7F /* KuponController.swift */,
+				CDD4C573224378F5001D7A7F /* QRUserController.swift */,
+				CDA8B0452244EFD5007202C8 /* TokenQRController.swift */,
+				CDDCB8322248C81100353CA3 /* BuyTokenController.swift */,
+				CDD90005224C7C620097478C /* CheckoutTokenController.swift */,
 				CD90DE5C221A8EE700918F3B /* Main.storyboard */,
 				CD90DE5F221A8EEA00918F3B /* Assets.xcassets */,
 				CDB30242222D2EF400DE538D /* icon_launcher */,
@@ -237,6 +266,15 @@
 		CD90DE8A221A976A00918F3B /* image_assets */ = {
 			isa = PBXGroup;
 			children = (
+				CDA8B03F2244BDDD007202C8 /* ic_calendar.png */,
+				CDA8B03D224493F2007202C8 /* logo_ekupon.png */,
+				CDD4C57B22439843001D7A7F /* bg_qr_user.jpg */,
+				CDD4C575224394CF001D7A7F /* background_qr.jpg */,
+				CDD4C576224394D2001D7A7F /* kupon_gold.png */,
+				CDD4C577224394D3001D7A7F /* kupon_silver.png */,
+				CD8C1534223BB1FD002C4DF5 /* ic_camera.png */,
+				CDC148EB2236696C008EBF83 /* settings.png */,
+				CD4BA62E222FAAE900EB4E6F /* ic_gratis_token.png */,
 				CDA59100222E2F03004D296F /* ic_shopping.png */,
 				CDA590FE222E2EBC004D296F /* ic_qr_code.png */,
 				CDA590FC222E2E52004D296F /* ic_ekupon.png */,
@@ -251,9 +289,13 @@
 		CD90DE90221AC18F00918F3B /* drawable */ = {
 			isa = PBXGroup;
 			children = (
+				CDDCB8342248CCD600353CA3 /* SBCardPopupViewController.swift */,
 				CD90DE91221AC25C00918F3B /* BtnLogin.swift */,
 				CDA56252221FA731008896D8 /* CustomToast.swift */,
 				CDA56254221FF1FB008896D8 /* progressLoading.swift */,
+				CD4BA62A222FA99F00EB4E6F /* VKuponController.xib */,
+				CD4BA636222FB25800EB4E6F /* VKuponController.swift */,
+				CD4BA638222FB58E00EB4E6F /* BorderedUIView.swift */,
 			);
 			path = drawable;
 			sourceTree = "<group>";
@@ -262,6 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				CDA59103222E533E004D296F /* HeaderViewCell.swift */,
+				CDD4C57D2243A1E9001D7A7F /* TokenViewCell.swift */,
+				CDDCB8362248E87200353CA3 /* PaketTokenViewCell.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -272,27 +316,22 @@
 				CDB0E85A221E55D800BF04F3 /* SessionManager.swift */,
 				CDB0E85C221E846000BF04F3 /* ServerURL.swift */,
 				CD4BA628222F789F00EB4E6F /* CustomItem.swift */,
+				CDA8B0412244D7FB007202C8 /* FormatDate.swift */,
+				CDA8B0432244DEC4007202C8 /* ItemValidation.swift */,
+				CDEAAAC6224B714F00E3ED79 /* ImageLoader.swift */,
+				CDBD878F224DFBAE006ADDA1 /* MidtransRes.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		CDB30255222D38A600DE538D /* Resources */ = {
+		F5F167301AD1E18B7CFD23B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDA590D9222E20AE004D296F /* dotActive.png */,
-				CDA590DB222E20AE004D296F /* dotActive@2x.png */,
-				CDA590DD222E20AF004D296F /* dotActive@3x.png */,
-				CDA590DA222E20AE004D296F /* dotInactive.png */,
-				CDA590DC222E20AF004D296F /* dotInactive@2x.png */,
-				CDA590E1222E20B1004D296F /* dotInactive@3x.png */,
-				CDA590D8222E20AD004D296F /* image1.jpg */,
-				CDA590DF222E20B0004D296F /* image2.jpg */,
-				CDA590D7222E20AD004D296F /* image3.jpg */,
-				CDA590DE222E20AF004D296F /* image4.jpg */,
-				CDA590D6222E20AC004D296F /* image5.jpg */,
-				CDA590E0222E20B0004D296F /* image6.jpg */,
+				D856596364B970B4F01D61F9 /* Pods_osbond.framework */,
+				5FECD54AC5D07FACD821A3CE /* Pods_osbondTests.framework */,
+				EC3D99ED4C5217BCE42A2E53 /* Pods_osbondUITests.framework */,
 			);
-			path = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,12 +341,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD90DE7D221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbond" */;
 			buildPhases = (
-				07E3A98A38AE4625F244092E /* [CP] Check Pods Manifest.lock */,
+				0B91559CE02335AF33EC2038 /* [CP] Check Pods Manifest.lock */,
 				CD90DE51221A8EE700918F3B /* Sources */,
 				CD90DE52221A8EE700918F3B /* Frameworks */,
 				CD90DE53221A8EE700918F3B /* Resources */,
-				74C902E9B92FD376A0C1C5E8 /* [CP] Embed Pods Frameworks */,
-				FC82196557C87D76E50368D0 /* [CP] Copy Pods Resources */,
+				CDE847BE2260727000BCB9C3 /* ShellScript */,
+				976D404F64E47767364DCB65 /* [CP] Embed Pods Frameworks */,
+				033AC1A652C9C6A00707E912 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,10 +362,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD90DE80221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbondTests" */;
 			buildPhases = (
-				9944F42774291090277563A0 /* [CP] Check Pods Manifest.lock */,
+				C7D10F95F458D3930084A119 /* [CP] Check Pods Manifest.lock */,
 				CD90DE65221A8EEA00918F3B /* Sources */,
 				CD90DE66221A8EEA00918F3B /* Frameworks */,
 				CD90DE67221A8EEA00918F3B /* Resources */,
+				2D19CA8BC3976E5984082293 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,7 +382,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD90DE83221A8EEA00918F3B /* Build configuration list for PBXNativeTarget "osbondUITests" */;
 			buildPhases = (
-				009454C2E703BD960A6C6745 /* [CP] Check Pods Manifest.lock */,
+				D05148DEA67FF035346CCCD3 /* [CP] Check Pods Manifest.lock */,
 				CD90DE70221A8EEA00918F3B /* Sources */,
 				CD90DE71221A8EEA00918F3B /* Frameworks */,
 				CD90DE72221A8EEA00918F3B /* Resources */,
@@ -369,6 +410,14 @@
 					CD90DE54221A8EE700918F3B = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					CD90DE68221A8EEA00918F3B = {
 						CreatedOnToolsVersion = 10.1;
@@ -405,30 +454,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD4C57A224394D6001D7A7F /* kupon_silver.png in Resources */,
+				CDD4C578224394D6001D7A7F /* background_qr.jpg in Resources */,
+				CDC148EC2236696D008EBF83 /* settings.png in Resources */,
 				CD90DE63221A8EEA00918F3B /* LaunchScreen.storyboard in Resources */,
-				CDA590E9222E20B1004D296F /* dotActive@3x.png in Resources */,
-				CDA590E6222E20B1004D296F /* dotInactive.png in Resources */,
 				CD90DE60221A8EEA00918F3B /* Assets.xcassets in Resources */,
 				CDB30241222D2EE300DE538D /* logo_osbond.png in Resources */,
-				CDA590E8222E20B1004D296F /* dotInactive@2x.png in Resources */,
 				CDA590FB222E2CA1004D296F /* ic_profile.png in Resources */,
-				CDA590E5222E20B1004D296F /* dotActive.png in Resources */,
 				CDA590F1222E20E1004D296F /* bg_login.jpg in Resources */,
+				CDA8B03E224493F3007202C8 /* logo_ekupon.png in Resources */,
 				CDA590FD222E2E53004D296F /* ic_ekupon.png in Resources */,
 				CDA590F0222E20E1004D296F /* bg_main.jpg in Resources */,
-				CDA590E4222E20B1004D296F /* image1.jpg in Resources */,
-				CDA590E2222E20B1004D296F /* image5.jpg in Resources */,
 				CDA590FF222E2EBE004D296F /* ic_qr_code.png in Resources */,
 				CDB30243222D2EF400DE538D /* icon_launcher in Resources */,
-				CDA590E3222E20B1004D296F /* image3.jpg in Resources */,
-				CDA590EC222E20B1004D296F /* image6.jpg in Resources */,
+				CDD4C57C22439845001D7A7F /* bg_qr_user.jpg in Resources */,
 				CDB30245222D2EFE00DE538D /* GoogleService-Info.plist in Resources */,
-				CDA590ED222E20B1004D296F /* dotInactive@3x.png in Resources */,
 				CD90DE5E221A8EE700918F3B /* Main.storyboard in Resources */,
-				CDA590EB222E20B1004D296F /* image2.jpg in Resources */,
-				CDA590EA222E20B1004D296F /* image4.jpg in Resources */,
-				CDA590E7222E20B1004D296F /* dotActive@2x.png in Resources */,
+				CDD4C579224394D6001D7A7F /* kupon_gold.png in Resources */,
+				CDA8B0402244BDDD007202C8 /* ic_calendar.png in Resources */,
+				CD8C1535223BB1FD002C4DF5 /* ic_camera.png in Resources */,
+				CD4BA62F222FAAE900EB4E6F /* ic_gratis_token.png in Resources */,
 				CDA59101222E2F09004D296F /* ic_shopping.png in Resources */,
+				CD4BA62B222FA9A000EB4E6F /* VKuponController.xib in Resources */,
 				CDA590D3222E2055004D296F /* icon_user.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +497,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		009454C2E703BD960A6C6745 /* [CP] Check Pods Manifest.lock */ = {
+		033AC1A652C9C6A00707E912 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -458,21 +505,35 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MidtransKit/MidtransKit.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-osbondUITests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MidtransKit.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		07E3A98A38AE4625F244092E /* [CP] Check Pods Manifest.lock */ = {
+		0B91559CE02335AF33EC2038 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,7 +555,31 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		74C902E9B92FD376A0C1C5E8 /* [CP] Embed Pods Frameworks */ = {
+		2D19CA8BC3976E5984082293 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-osbondTests/Pods-osbondTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-osbondTests/Pods-osbondTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		976D404F64E47767364DCB65 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -503,8 +588,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -512,8 +597,6 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -523,8 +606,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
@@ -532,8 +615,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -544,7 +625,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9944F42774291090277563A0 /* [CP] Check Pods Manifest.lock */ = {
+		C7D10F95F458D3930084A119 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -566,7 +647,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC82196557C87D76E50368D0 /* [CP] Copy Pods Resources */ = {
+		CDE847BE2260727000BCB9C3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -574,34 +655,36 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
-			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-osbond/Pods-osbond-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		D05148DEA67FF035346CCCD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-osbondUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -612,14 +695,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDA56255221FF1FB008896D8 /* progressLoading.swift in Sources */,
+				CDD90006224C7C620097478C /* CheckoutTokenController.swift in Sources */,
+				CDD4C57222437648001D7A7F /* KuponController.swift in Sources */,
+				CDA8B0422244D7FB007202C8 /* FormatDate.swift in Sources */,
 				CDA56253221FA731008896D8 /* CustomToast.swift in Sources */,
+				CDDCB8372248E87200353CA3 /* PaketTokenViewCell.swift in Sources */,
 				CD90DE5B221A8EE700918F3B /* ViewController.swift in Sources */,
 				CDA59104222E533E004D296F /* HeaderViewCell.swift in Sources */,
+				CDC148EE22366E8A008EBF83 /* ProfileViewController.swift in Sources */,
+				CDD4C57E2243A1E9001D7A7F /* TokenViewCell.swift in Sources */,
 				CD90DE92221AC25C00918F3B /* BtnLogin.swift in Sources */,
+				CDA8B0442244DEC4007202C8 /* ItemValidation.swift in Sources */,
 				CDB0E85D221E846000BF04F3 /* ServerURL.swift in Sources */,
+				CDD5DF3F2232817A00BAD908 /* HomeOTPFreeCupon.swift in Sources */,
+				CDD4C574224378F5001D7A7F /* QRUserController.swift in Sources */,
+				CD928B862238F551001034E8 /* EditProfileViewController.swift in Sources */,
 				CDB0E85B221E55D800BF04F3 /* SessionManager.swift in Sources */,
+				CD4BA637222FB25800EB4E6F /* VKuponController.swift in Sources */,
+				CDEAAAC7224B715000E3ED79 /* ImageLoader.swift in Sources */,
 				CD90DE59221A8EE700918F3B /* AppDelegate.swift in Sources */,
+				CDBD8790224DFBAE006ADDA1 /* MidtransRes.swift in Sources */,
+				CDA8B0462244EFD5007202C8 /* TokenQRController.swift in Sources */,
+				CDDCB8352248CCD600353CA3 /* SBCardPopupViewController.swift in Sources */,
 				CDB3026F222D391400DE538D /* HomeViewController.swift in Sources */,
+				CD4BA639222FB58E00EB4E6F /* BorderedUIView.swift in Sources */,
+				CDDCB8332248C81100353CA3 /* BuyTokenController.swift in Sources */,
 				CD4BA629222F789F00EB4E6F /* CustomItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,6 +779,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -740,6 +841,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -793,18 +895,20 @@
 		};
 		CD90DE7E221A8EEA00918F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF1D47E93095D6CDB23DBA2C /* Pods-osbond.debug.xcconfig */;
+			baseConfigurationReference = 93C74B129004EDD2F845E93E /* Pods-osbond.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = osbond/osbond.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A639MSY8Y;
 				INFOPLIST_FILE = osbond/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbond;
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbonduser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
@@ -816,18 +920,20 @@
 		};
 		CD90DE7F221A8EEA00918F3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 297140B109A56C68171240DA /* Pods-osbond.release.xcconfig */;
+			baseConfigurationReference = 9F135B9F2769D013AD8288CA /* Pods-osbond.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = osbond/osbond.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A639MSY8Y;
 				INFOPLIST_FILE = osbond/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbond;
+				PRODUCT_BUNDLE_IDENTIFIER = gmedia.net.id.osbonduser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
@@ -838,7 +944,7 @@
 		};
 		CD90DE81221A8EEA00918F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E359DD7932375D5478CA621 /* Pods-osbondTests.debug.xcconfig */;
+			baseConfigurationReference = 20BCBDF4BECD75B30CADDB88 /* Pods-osbondTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -860,7 +966,7 @@
 		};
 		CD90DE82221A8EEA00918F3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4C4094444DF73ED7E6D51D6 /* Pods-osbondTests.release.xcconfig */;
+			baseConfigurationReference = F28F16FA8AE71BF5E9C0BBCE /* Pods-osbondTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -882,7 +988,7 @@
 		};
 		CD90DE84221A8EEA00918F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 715CF5A5CB9C4CE909E18B9E /* Pods-osbondUITests.debug.xcconfig */;
+			baseConfigurationReference = 512329C0CD97B9D061D4587B /* Pods-osbondUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -903,7 +1009,7 @@
 		};
 		CD90DE85221A8EEA00918F3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D43B014F01662452A46CB1CB /* Pods-osbondUITests.release.xcconfig */;
+			baseConfigurationReference = 2DE9FFF3D763921145AFFE02 /* Pods-osbondUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

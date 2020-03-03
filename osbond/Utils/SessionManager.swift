@@ -11,13 +11,20 @@ import CoreData
 
 class SessionManager: NSObject {
 
-    let userDef = UserDefaults.standard
+    public static let userDef = UserDefaults.standard
     /*var uid: String = ""
     var email: String = ""
     var displayName: String = ""
     var foto: String = ""
     var type: String = ""
     var fcmId: String = ""*/
+    
+    static let session = SessionManager()
+    
+    class func getObject()->SessionManager{
+        
+        return session;
+    }
     
     let TAG_UID: String = "uid";
     let TAG_EMAIL: String = "email";
@@ -27,55 +34,55 @@ class SessionManager: NSObject {
     
     public func saveSession(uid: String, email: String, displayName: String, token: String){
         
-        self.userDef.set(uid, forKey: TAG_UID)
-        self.userDef.set(email, forKey: TAG_EMAIL)
-        self.userDef.set(displayName, forKey: TAG_NAME)
-        self.userDef.set(token, forKey: TAG_TOKEN)
+        SessionManager.userDef.set(uid, forKey: TAG_UID)
+        SessionManager.userDef.set(email, forKey: TAG_EMAIL)
+        SessionManager.userDef.set(displayName, forKey: TAG_NAME)
+        SessionManager.userDef.set(token, forKey: TAG_TOKEN)
     }
     
-    public func saveSession(uid: String, email: String, displayName: String, type: String){
+    public func saveSessionType(uid: String, email: String, displayName: String, type: String){
         
-        self.userDef.set(uid, forKey: TAG_UID)
-        self.userDef.set(email, forKey: TAG_EMAIL)
-        self.userDef.set(displayName, forKey: TAG_NAME)
-        self.userDef.set(type, forKey: TAG_TYPE)
+        SessionManager.userDef.set(uid, forKey: TAG_UID)
+        SessionManager.userDef.set(email, forKey: TAG_EMAIL)
+        SessionManager.userDef.set(displayName, forKey: TAG_NAME)
+        SessionManager.userDef.set(type, forKey: TAG_TYPE)
     }
     
     public func updateUID(uid: String){
         
-        self.userDef.set(uid, forKey: TAG_UID)
+        SessionManager.userDef.set(uid, forKey: TAG_UID)
     }
     
     public func updateToken(token: String){
         
-        self.userDef.set(token, forKey: TAG_TOKEN)
+        SessionManager.userDef.set(token, forKey: TAG_TOKEN)
     }
     
     public func removeSession(){
         
-        self.userDef.set("", forKey: TAG_UID)
-        self.userDef.set("", forKey: TAG_EMAIL)
-        self.userDef.set("", forKey: TAG_NAME)
-        self.userDef.set("", forKey: TAG_TYPE)
+        SessionManager.userDef.set("", forKey: TAG_UID)
+        SessionManager.userDef.set("", forKey: TAG_EMAIL)
+        SessionManager.userDef.set("", forKey: TAG_NAME)
+        SessionManager.userDef.set("", forKey: TAG_TYPE)
     }
     
-    func getToken() -> String {
-        return (userDef.string(forKey: TAG_TOKEN) ?? "")
+    public func getToken() -> String {
+        return (SessionManager.userDef.string(forKey: TAG_TOKEN) ?? "")
     }
     
-    func getUID() -> String {
-        return (userDef.string(forKey: TAG_UID) ?? "")
+    public func getUID() -> String {
+        return (SessionManager.userDef.string(forKey: TAG_UID) ?? "")
     }
     
-    func getEmail() -> String {
-        return (userDef.string(forKey: TAG_EMAIL) ?? "")
+    public func getEmail() -> String {
+        return (SessionManager.userDef.string(forKey: TAG_EMAIL) ?? "")
     }
     
-    func getName() -> String {
-        return (userDef.string(forKey: TAG_NAME) ?? "")
+    public func getName() -> String {
+        return (SessionManager.userDef.string(forKey: TAG_NAME) ?? "")
     }
     
-    func isLogin() -> Bool{
+    public func isLogin() -> Bool{
         
         let uid = self.getUID()
         
